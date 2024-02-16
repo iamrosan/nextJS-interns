@@ -7,7 +7,7 @@ import SpinnerComponent from "../shared/spinner-component/SpinnerComponent";
 import { useRouter } from "next/navigation";
 const TodosItemsComponent = ({ id }) => {
   const router = useRouter();
-
+  console.log("router", router);
   const [loading, setLoading] = useState(true);
 
   const [user, setUser] = useState({});
